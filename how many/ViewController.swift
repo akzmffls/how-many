@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+ // ViewController.swift
 //  how many
 //
 //  Created by D7703_14 on 2018. 3. 26..
@@ -20,8 +20,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    
-    
     @IBAction func guess(_ sender: Any) {
         //랜덤 숫자 생성
         let number = arc4random() % 6
@@ -33,6 +31,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }else{
             label.text = "실패"
         }
+        
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {
             input.resignFirstResponder()
             return true
@@ -41,7 +40,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {view.endEditing(true)
         input.backgroundColor = UIColor.cyan
     }
+    }
+    
+    
+    
     
 
-}
+    
+
 
